@@ -80,4 +80,7 @@ fun multiIndicator(
 <li>indicatorSpacing - Set the spaces between individual indicator</li>
 
 
-
+<br><br>
+Here's the demo video for multiple type indicator
+<br>
+[![Demo](https://github.com/raipankaj/StoryUi/blob/main/multi_indicator_stories.gif)](https://youtu.be/d0_tH6FfWuo)
