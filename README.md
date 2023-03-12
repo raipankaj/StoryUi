@@ -5,7 +5,16 @@ Stories can be beneficial for your app users who prefer to view content in slide
 chat apps or video calling apps. Now adding such features to your app is as simple as calling a single composable function that accepts images as a url 
 and load them automatically inside the story ui.
 
+<h2>Features</h2>
+<li>Set color for indicator</li>
+<li>Select type of indicator</li>
+<li>Based on the screen click either move to next image or to the previous image</li>
+<li>Auto caching once images are loaded from the network</li>
+<li>Set time for image slide</li>
+
+<br>
 To get started with StoryUi just add the following path in settings.gradle
+
 ```gradle
 allprojects {
   repositories {
@@ -49,6 +58,7 @@ Two types of indicators are supported with this library
 <h3>Single type indicator</h3>
 Set the single type indicator by setting the "<b>indicator</b>" parameter to <b>StoryIndicator.singleIndicator()</b>
 To customize this indicator you may pass various parameters
+
 ```kotlin
 fun singleIndicator(
   indicatorColor: Color = Color.White,
@@ -56,6 +66,7 @@ fun singleIndicator(
   modifier: Modifier = Modifier.fillMaxWidth()
 )
 ```
+
 <li>indicatorColor - Set the color of the indicator</li>
 <li>indicatorTrackColor - Set the background color for the indicator</li>
 <li>modifier - Set the modifier to add background, padding, shape etc for the indicator</li>
@@ -64,6 +75,7 @@ fun singleIndicator(
 <h3>Multiple type indicator</h3>
 Set the muliple type indicator by setting the "<b>indicator</b>" parameter to <b>StoryIndicator.multiIndicator()</b>
 To customize this indicator you may pass various parameters
+
 ```kotlin
 fun multiIndicator(
   indicatorColor: Color = Color.White,
@@ -73,14 +85,16 @@ fun multiIndicator(
   indicatorSpacing: Dp = 4.dp
 )
 ```
+
 <li>indicatorColor - Set the color of the indicator</li>
 <li>indicatorTrackColor - Set the background color for the indicator</li>
 <li>modifier - Set the modifier to add background, padding, shape etc for the indicator</li>
 <li>indicatorPadding - Set the padding for the overall indicator</li>
 <li>indicatorSpacing - Set the spaces between individual indicator</li>
 
-
 <br><br>
-Here's the demo video for multiple type indicator
+Demo - Single type indicator & Multiple type indicator
 <br>
+[![Demo](https://github.com/raipankaj/StoryUi/blob/main/single_indicator_stories.gif)](https://youtu.be/d0_tH6FfWuo)
 [![Demo](https://github.com/raipankaj/StoryUi/blob/main/multi_indicator_stories.gif)](https://youtu.be/d0_tH6FfWuo)
+
